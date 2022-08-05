@@ -43,3 +43,40 @@ a:hover {
   font-weight: 500;
 
 }
+.LeftSideButtons {
+  display: flex;
+  flex-wrap: wrap;
+}
+.leftSide {
+  width: 50px;
+  border-radius: 70px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: yellow;
+}
+
+.numbersButton button {
+    width: 70px;
+    margin: 3px;
+    border-radius: 10px;
+    font-weight: 700;
+    background-color:blueviolet;
+    cursor: pointer;
+}
+.enterButton, .escButton {
+  width: 70px;
+  border-radius: 70px;
+  padding: 10px;
+
+}
+
+.upDown {
+  width: 70px;
+  height: 10px;
+  border-radius: 70px;
+  padding: 10px;
+}
+.rightButton {
+  display: flex;
+;
+}
