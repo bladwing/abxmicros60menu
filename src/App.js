@@ -4,13 +4,16 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <h1>ABX Micros 60</h1>
+     
       <Router>
+      <Link to="/"> <h1>ABX Micros 60</h1></Link>
         <div className="MainMenu">
           <ul>
             <li>
-              {" "}
-              <Link to="/">1.Reults</Link>
+              <Link to="/"></Link>
+            </li>
+            <li>
+              <Link to="/results">1.Reults</Link>
             </li>
             <li>
               <Link to="/qc">2.Q.C.</Link>
@@ -30,6 +33,8 @@ function App() {
         </div>
         <Routes>
           <Route path="/" element={<MainMenu />} />
+          <Route path="/results" element={<Results />} />
+
           <Route path="/qc" element={<QC />} />
           <Route path="/calibration" element={<Calibration />} />
           <Route path="/service" element={<Service />} />
@@ -51,6 +56,40 @@ const MainMenu = () => {
     <div>
       <h2> Main Menu</h2>
       <ul></ul>
+    </div>
+  );
+};
+const Results = () => {
+  return (
+    <div>
+      <h2> Results</h2>
+
+      <table className="resultsTable">
+        <tbody>
+          <tr>
+            <td>WBC</td>
+            <td>RBC</td>
+            <td>HGB</td>
+            <td>HCT</td>
+            <td>MCV</td>
+            <td>MCH</td>
+            <td>MCHC</td>
+            <td>PLT</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 };
